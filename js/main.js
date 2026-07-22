@@ -1,5 +1,8 @@
 (() => {
     "use strict";
+
+    const SLIDER_GAME_INDEXES = [16, 12, 9, 19, 17];
+
     const e = document.querySelector(".swiper-wrapper"),
         t = document.querySelector(".cards"),
         s = document.querySelector(".graph-modal"),
@@ -247,7 +250,7 @@
                 desc: "퍼즐을 좋아하시나요? 그렇다면 십자말풀이 퍼즐이 여러분께 딱 맞습니다! 다양한 주제와 난이도의 수많은 퍼즐이 준비되어 있습니다. 재미있게 게임을 즐기며 논리력, 기억력을 비롯하여 교양을 키워보세요."
             }
         }, {
-            index: 7,
+            index: 5,
             name: "spacecraft",
             rate: 6,
             ru: {
@@ -287,7 +290,7 @@
                 desc: "모듈식 우주선을 조종하며 적들과 싸우는 역동적인 우주 아케이드 게임입니다. 새로운 부품을 수집해 무기와 함선을 강화하고, 레벨을 클리어하여 나만의 우주선을 강력한 전투 기지로 만들어 보세요!"
             }
         }, {
-            index: 8,
+            index: 6,
             name: "tank_attack_5",
             rate: 12,
             ru: {
@@ -327,7 +330,7 @@
                 desc: "전차 액션 게임입니다! 전투 장비를 구매하고 업그레이드하며, 아케이드 전장을 누비며 기지를 사수하세요. 보스를 물리치면서 새로운 전차, 스킨, 맵을 해금하세요."
             }
         }, {
-            index: 9,
+            index: 7,
             name: "trampoline_basketball",
             rate: 0,
             ru: {
@@ -367,7 +370,7 @@
                 desc: "트램펄린 농구의 짜릿한 세계에 오신 것을 환영합니다! 점프하고, 조준하고, 빨간 버킷에 공을 넣어서 결승선까지 도달하세요. 레벨을 클리어하여 새로운 도전을 잠금 해제하고, 정확도와 속도를 발휘해 최고 점수를 획득하도록 노력해 보세요."
             }
         }, {
-            index: 10,
+            index: 8,
             name: "the_domino",
             rate: 0,
             ru: {
@@ -407,7 +410,7 @@
                 desc: "규칙이 간단하고 조작법이 직관적인 고전 게임입니다. 패를 내려놓으며 가장 좋은 수를 골라내고, 상대를 막아내면서 누구보다 빠르게 여러분의 도미노를 모두 털어내 보세요."
             }
         }, {
-            index: 11,
+            index: 9,
             name: "screwdom",
             rate: 0,
             ru: {
@@ -447,7 +450,7 @@
                 desc: "나사를 풀고, 부품을 분리하면서 올바른 순서를 찾아보세요! 레벨이 올라갈수록 난이도가 높아지므로 집중력과 논리적 사고력이 필요합니다. 간편한 조작과 정교한 퍼즐로 모든 연령대가 즐길 수 있는 게임입니다!"
             }
         }, {
-            index: 12,
+            index: 10,
             name: "traffic_rider",
             rate: 12,
             ru: {
@@ -487,7 +490,7 @@
                 desc: "도로를 질주하며 다른 차량을 피하고, 가능한 한 멀리까지 달려나가는 역동적인 레이싱 게임입니다. 성능을 향상시키고 초고속 주행을 즐기면서 여러분의 순발력을 확인해 보세요!"
             }
         }, {
-            index: 13,
+            index: 11,
             name: "dreamy_room",
             rate: 6,
             ru: {
@@ -527,7 +530,7 @@
                 desc: "정리와 아늑함을 주제로 한 편안한 게임입니다. 가구를 배치하고, 물건들을 제자리에 놓으며 꿈에 그리던 방을 만들어 보세요. 간편한 조작법, 즐거운 분위기로 모든 연령대가 즐길 수 있는 여유로운 게임입니다!"
             }
         }, {
-            index: 14,
+            index: 12,
             name: "mosaic",
             rate: 0,
             ru: {
@@ -567,7 +570,7 @@
                 desc: "마음을 편안하게 해주는 모자이크 퍼즐의 세계에 빠져들어, 차분한 분위기 속에서 조각들을 하나씩 맞춰가며 생동감 넘치는 그림을 완성해 보세요. 다양한 난이도의 레벨과 시간 제한이 없는 명상적인 게임플레이는 스트레스 해소에 도움이 되며, 집중력과 논리적 사고력을 키워줍니다."
             }
         }, {
-            index: 17,
+            index: 13,
             name: "jewels_palace",
             rate: 6,
             ru: {
@@ -607,7 +610,7 @@
                 desc: "조합을 완성하고, 레벨을 클리어하며, 독특한 보물을 찾아야 하는 화려한 게임입니다. 다양한 보너스 아이템을 활용하고, 전략을 세우며, 수백 가지의 흥미진진한 시련을 헤쳐 나가는 모험을 떠나보세요!"
             }
         }, {
-            index: 18,
+            index: 14,
             name: "horror_haze",
             rate: 16,
             ru: {
@@ -647,7 +650,7 @@
                 desc: "여러분은 두 세계 사이에 갇혀 있습니다. 지하 미궁을 탐험하며 함정을 피하고, 퍼즐을 풀어 몬스터들을 물리치세요. 포털을 활성화하고 탈출할 방법을 찾아보세요!"
             }
         },  {
-            index: 20,
+            index: 15,
             name: "gas_station",
             rate: 12,
             ru: {
@@ -687,7 +690,7 @@
                 desc: "자신만의 주유소를 운영해 나가는 재미있는 게임입니다. 차량을 정비하고, 주유소를 개선하며, 상점과 카페, 새로운 구역을 개설하고, 직원을 고용하여 작은 주유소를 수익성 높은 사업으로 키워보세요!"
             }
         }, {
-            index: 21,
+            index: 16,
             name: "dinosaur_land",
             rate: 6,
             ru: {
@@ -727,7 +730,7 @@
                 desc: "공룡과 함께 나만의 농장을 건설하고 발전시켜 나가는 게임입니다. 선사 시대의 생물들을 돌보고, 영토를 확장하며, 새로운 종을 발견하면서 농장을 진정한 공룡 공원으로 만들어 보세요."
             }
         }, {
-            index: 22,
+            index: 17,
             name: "bear_shooter",
             rate: 0,
             ru: {
@@ -767,7 +770,7 @@
                 desc: "정확한 사격으로 풍선을 터뜨리세요! 조합을 만들어 유리 방울을 터뜨리고 레벨을 클리어하세요. 거품 군대는 버텨내지 못할 것입니다!"
             }
         }, {
-            index: 23,
+            index: 18,
             name: "billiards",
             rate: 0,
             ru: {
@@ -807,7 +810,7 @@
                 desc: "정확도를 시험하고, 샷을 계산하며, 당구의 달인이 되어 보세요."
             }
         }, {
-            index: 24,
+            index: 19,
             name: "nardi",
             rate: 0,
             ru: {
@@ -863,12 +866,12 @@
         }))
     }! function (t) {
         e ? (arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : []).forEach((s => {
-            const i = t[s];
+            const i = t.find((g => g.index === s));
             if (!i) return;
             const a = `\n      <div class="swiper-slide" data-graph-path="${i.index}">\n        <h1 class="slide-title">${i[r]?.title||""}</h1>\n        <img src="img/${i.name}__slider.png" alt="${i.name} cover">\n      </div>`;
             e.insertAdjacentHTML("beforeend", a)
         })) : console.warn("sliderContainer не найден в DOM")
-    }(a, [4, 10, 13, 15, 20]),
+    }(a, SLIDER_GAME_INDEXES),
     function (e) {
         e.forEach((e => {
             const s = `<div class="cards__item" data-graph-path="${e.index}">\n        <img class="cards__item__cover" src="img/${e.name}.jpg" alt="Cover">\n        <div class="cards__item__info">\n          <h2 class="cards__item__info__title">${e[r]?.title||""}</h2>\n          <div class="cards__item__info__age">${e.rate}+</div>\n        </div>\n      </div>`;
