@@ -1,0 +1,15 @@
+{
+    "name": "Мотогонщик Дорожный Беспредел",
+    "short_name": "Мотогонщик Дорожный Беспредел",
+    "start_url": "index.html",
+    "display": "fullscreen",
+    "background_color": "#1F1F20",
+    "theme_color": "#000",
+    "description": "Motorcycle Racer: Road Mayhem Samsung",
+    "icons": [{
+      "src": "TemplateData/icons/unity-logo-dark.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }]
+  }

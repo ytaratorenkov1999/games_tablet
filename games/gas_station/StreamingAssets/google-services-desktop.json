@@ -1,0 +1,31 @@
+{
+  "project_info": {
+    "project_number": "880799357701",
+    "project_id": "gas-station-id",
+    "storage_bucket": "gas-station-id.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:880799357701:ios:6958a55532f844c6d8f56c",
+        "android_client_info": {
+          "package_name": "space.webcave.idle.arcade.gas.station"
+        }
+      },
+      "api_key": [
+        {
+          "current_key": "AIzaSyA49VMiF3Ob4Pnv5hMQ8m6VL2T5xka7Z_M"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 0
+        },
+        "appinvite_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

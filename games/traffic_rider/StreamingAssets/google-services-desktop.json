@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "847072742957",
+    "project_id": "bike-rider-moto-traffic-race",
+    "storage_bucket": "bike-rider-moto-traffic-race.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:847072742957:android:2e3124092d7223c47ef2a4",
+        "android_client_info": {
+          "package_name": "com.rgates.endless.traffic.rider.city.racing.games"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "847072742957-gejhfinelk8t0nassfkshc96e1vm16js.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAggiF6Z27Ew-fBDw8yWy3ZEWbBr_-aRfg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "847072742957-gejhfinelk8t0nassfkshc96e1vm16js.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
