@@ -194,12 +194,12 @@ const unityApp = {
         const progressBarFull = document.querySelector("#unity-progress-bar-full");
 
         const buildUrl = "Build";
-        const loaderUrl = buildUrl + "/TrampolineBasketball3DStickman[2]-mirraSDK[5.1.20].loader.js";
+        const loaderUrl = buildUrl + "/tb3d-v5120.loader.js";
         const config = {
             arguments: [],
-            dataUrl: buildUrl + "/TrampolineBasketball3DStickman[2]-mirraSDK[5.1.20].data.unityweb",
-            frameworkUrl: buildUrl + "/TrampolineBasketball3DStickman[2]-mirraSDK[5.1.20].framework.js.unityweb",
-            codeUrl: buildUrl + "/TrampolineBasketball3DStickman[2]-mirraSDK[5.1.20].wasm.unityweb",
+            dataUrl: buildUrl + "/tb3d-v5120.data.unityweb",
+            frameworkUrl: buildUrl + "/tb3d-v5120.framework.js.unityweb",
+            codeUrl: buildUrl + "/tb3d-v5120.wasm.unityweb",
             streamingAssetsUrl: "StreamingAssets",
             companyName: "BANZAI",
             productName: "Trampoline Basketball 3D Stickman",
