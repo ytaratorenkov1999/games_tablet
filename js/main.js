@@ -1,7 +1,7 @@
 (() => {
     "use strict";
 
-    const SLIDER_GAME_INDEXES = [16, 12, 9, 19, 17];
+    const SLIDER_GAME_INDEXES = [16, 5, 9, 19, 17];
 
     const e = document.querySelector(".swiper-wrapper"),
         t = document.querySelector(".cards"),
@@ -528,46 +528,6 @@
             ko: {
                 title: "꿈의 방: 가구 배치",
                 desc: "정리와 아늑함을 주제로 한 편안한 게임입니다. 가구를 배치하고, 물건들을 제자리에 놓으며 꿈에 그리던 방을 만들어 보세요. 간편한 조작법, 즐거운 분위기로 모든 연령대가 즐길 수 있는 여유로운 게임입니다!"
-            }
-        }, {
-            index: 12,
-            name: "mosaic",
-            rate: 0,
-            ru: {
-                title: "Мозаика: 3D-Пазл",
-                desc: "Погрузитесь в мир расслабляющих пазлов-мозаики и собирайте яркие картины по кусочкам в спокойной атмосфере. Уровни разной сложности, медитативный геймплей без таймеров помогает снять стресс, развивает внимание и логику."
-            },
-            en: {
-                title: "Mosaic: 3D Puzzle",
-                desc: "Immerse yourself in the world of relaxing jigsaw puzzles and piece together vibrant images in a calm atmosphere. With levels of varying difficulty and meditative gameplay without timers, this game helps relieve stress and develops your attention and logical thinking."
-            },
-            de: {
-                title: "Mosaik: 3D-Puzzle",
-                desc: "Tauche ein in die Welt der entspannenden Mosaik-Puzzles und setze in ruhiger Atmosphäre Stück für Stück farbenfrohe Bilder zusammen. Levels mit unterschiedlichem Schwierigkeitsgrad und ein meditatives Gameplay ohne Zeitlimit helfen dabei, Stress abzubauen, und fördern die Aufmerksamkeit sowie das logische Denken."
-            },
-            fr: {
-                title: "Mosaïque: Puzzle 3D",
-                desc: "Offrez-vous une expérience de relaxation en assemblant des puzzles pour en faire de beaux tableaux, pièce par pièce, dans une ambiance sereine. Des niveaux de difficulté variés et un gameplay méditatif sans limite de temps aident à réduire le stress tout en améliorant la concentration et la logique."
-            },
-            it: {
-                title: "Mosaico: Puzzle 3D",
-                desc: "Immergiti nel mondo dei rilassanti puzzle a mosaico e ricomponi immagini vivaci, pezzo dopo pezzo, in un’atmosfera serena. Livelli di difficoltà variabile e un gameplay meditativo senza timer aiutano a ridurre lo stress e sviluppano attenzione e logica."
-            },
-            es: {
-                title: "Mosaico: Puzzle 3D",
-                desc: "Sumérgete en el mundo de los relajantes rompecabezas de mosaico y completa las coloridas imágenes pieza a pieza en un ambiente tranquilo. Niveles de diferentes dificultades y una jugabilidad meditativa sin límite de tiempo que te ayudará a aliviar el estrés y a desarrollar la atención y la lógica."
-            },
-            zh: {
-                title: "马赛克：3D拼图",
-                desc: "沉浸在轻松治愈的拼图世界中，一片一片拼出色彩斑斓的画面，在安静舒适的氛围中放松身心。多种难度关卡设计，免计时的冥想式玩法，帮助释放压力，同时锻炼专注力与逻辑思维。"
-            },
-            ja: {
-                title: "モザイク：3Dパズル",
-                desc: "色鮮やかな絵を少しずつ完成させていく、リラックスできるモザイクパズルの世界へようこそ。さまざまな難易度のステージと、時間制限のない落ち着いたゲームプレイで、ストレスを解消しながら集中力と論理的思考力を鍛えましょう。"
-            },
-            ko: {
-                title: "모자이크: 3D 퍼즐",
-                desc: "마음을 편안하게 해주는 모자이크 퍼즐의 세계에 빠져들어, 차분한 분위기 속에서 조각들을 하나씩 맞춰가며 생동감 넘치는 그림을 완성해 보세요. 다양한 난이도의 레벨과 시간 제한이 없는 명상적인 게임플레이는 스트레스 해소에 도움이 되며, 집중력과 논리적 사고력을 키워줍니다."
             }
         }, {
             index: 13,
