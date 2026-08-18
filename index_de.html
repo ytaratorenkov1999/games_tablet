@@ -1,1 +1,64 @@
-<!DOCTYPE html><html lang="ru" class="page"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><meta http-equiv="X-UA-Compatible" content="ie=edge"><meta name="theme-color" content="#111111"><title>Games Aeroflot</title><link rel="preload" href="fonts/RobotoFlexVariable.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="css/vendor.css"><link rel="stylesheet" href="css/main.css"><script defer="defer" src="js/main.js"></script></head><body class="page__body"><div class="site-container"><header class="header"><button class="btn-reset button button__circle close"><!-- <button class="btn-reset button button__circle"> --> <a href="/"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.5 23.4705L23.4706 6.4999" stroke="white" stroke-width="2.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" class="icon"/><path d="M23.5 23.4705L6.52944 6.4999" stroke="white" stroke-width="2.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" class="icon"/></svg></a></button></header><main class="main"><section class="slider"><div class="swiper"><div class="swiper-wrapper"></div><div class="swiper-pagination"></div></div></section><section class="catalog offset"><div class="container"><div class="cards"></div></div></section></main><footer class="footer" style="height: 150px;"><div class="container"></div></footer><div class="graph-modal"></div><div class="game__container"><iframe id="gameFrame" src="" frameborder="0"></iframe><button class="btn-reset button button__circle button__game-close"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.5 23.4705L23.4706 6.4999" stroke="white" stroke-width="2.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" class="icon"/><path d="M23.5 23.4705L6.52944 6.4999" stroke="white" stroke-width="2.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" class="icon"/></svg></button><div class="game__container__confirm is-hidden"><h3 data-i18n="confirm">Вы действительно хотите выйти из игры?</h3><div class="game__container__confirm__buttons"><button class="btn-reset button exit-btn"><p data-i18n="btnYes">Да</p></button> <button class="btn-reset button cancel-btn"><p data-i18n="btnNo">Нет</p></button></div></div></div></div></body></html>
+<!DOCTYPE html>
+<html lang="ru" class="page">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="theme-color" content="#111111">
+        <title>Games Aeroflot</title>
+        <link rel="preload" href="fonts/RobotoFlexVariable.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="stylesheet" href="css/vendor.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script defer="defer" src="js/main.js"></script>
+    </head>
+    <body class="page__body">
+        <div class="site-container">
+            <header class="header">
+                <button class="btn-reset button button__circle close">
+                    <!-- <button class="btn-reset button button__circle"> -->
+                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.5 23.4705L23.4706 6.4999" stroke="white" stroke-width="2.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" class="icon"/>
+                        <path d="M23.5 23.4705L6.52944 6.4999" stroke="white" stroke-width="2.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" class="icon"/>
+                    </svg>
+                </button>
+            </header>
+            <main class="main">
+                <section class="slider">
+                    <div class="swiper">
+                        <div class="swiper-wrapper"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </section>
+                <section class="catalog offset">
+                    <div class="container">
+                        <div class="cards"></div>
+                    </div>
+                </section>
+            </main>
+            <footer class="footer" style="height: 150px;">
+                <div class="container"></div>
+            </footer>
+            <div class="graph-modal"></div>
+            <div class="game__container">
+                <iframe id="gameFrame" src="" frameborder="0"></iframe>
+                <button class="btn-reset button button__circle button__game-close">
+                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.5 23.4705L23.4706 6.4999" stroke="white" stroke-width="2.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" class="icon"/>
+                        <path d="M23.5 23.4705L6.52944 6.4999" stroke="white" stroke-width="2.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" class="icon"/>
+                    </svg>
+                </button>
+                <div class="game__container__confirm is-hidden">
+                    <h3 data-i18n="confirm">Вы действительно хотите выйти из игры?</h3>
+                    <div class="game__container__confirm__buttons">
+                        <button class="btn-reset button exit-btn">
+                            <p data-i18n="btnYes">Да</p>
+                        </button>
+                        <button class="btn-reset button cancel-btn">
+                            <p data-i18n="btnNo">Нет</p>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
