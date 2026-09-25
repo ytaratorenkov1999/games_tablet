@@ -1,7 +1,7 @@
 (() => {
     "use strict";
 
-    const SLIDER_GAME_INDEXES = [16, 9, 19, 17];
+    const SLIDER_GAME_INDEXES = [16, 5, 9, 19, 17];
 
     const e = document.querySelector(".swiper-wrapper"),
         t = document.querySelector(".cards"),
@@ -248,6 +248,46 @@
             ko: {
                 title: "십자말풀이",
                 desc: "퍼즐을 좋아하시나요? 그렇다면 십자말풀이 퍼즐이 여러분께 딱 맞습니다! 다양한 주제와 난이도의 수많은 퍼즐이 준비되어 있습니다. 재미있게 게임을 즐기며 논리력, 기억력을 비롯하여 교양을 키워보세요."
+            }
+        }, {
+            index: 5,
+            name: "spacecraft",
+            rate: 6,
+            ru: {
+                title: "Spacecraft: Война кораблей",
+                desc: "Динамичная космическая аркада, где вы управляете модульным кораблем и сражаетесь с врагами. Собирайте новые части, улучшайте оружие, усиливайте корабль, проходите уровни и превращайте его в мощную боевую станцию!"
+            },
+            en: {
+                title: "Spacecraft: War of the Ships",
+                desc: "A fast-paced space arcade game where you pilot a modular ship and battle enemies. Collect new parts, upgrade your weapons, enhance your ship, complete levels, and turn it into a powerful battle station!"
+            },
+            de: {
+                title: "Spacecraft: Der Krieg der Raumschiffe",
+                desc: "Ein dynamisches Weltraum-Arcade-Spiel, in dem du ein modulares Raumschiff steuerst und gegen Feinde kämpfst. Sammle neue Teile, verbessere deine Waffen, rüste dein Raumschiff auf, meistere die Level und verwandle es in eine mächtige Kampfstation!"
+            },
+            fr: {
+                title: "Spacecraft: La guerre des vaisseaux",
+                desc: "Un jeu d'arcade spatial dynamique où vous pilotez un vaisseau modulaire et combattez des ennemis. Collectez de nouvelles pièces, améliorez vos armes, renforcez votre vaisseau, passez des niveaux et transformez-le en une puissante station de combat!"
+            },
+            it: {
+                title: "Spacecraft: Guerra nello spazio",
+                desc: "Un arcade spaziale dinamico dove controlli un’astronave modulare e combatti contro i nemici. Raccogli nuovi componenti, potenzia le armi, rinforza la nave, supera i livelli e trasforma la nave in una potente stazione da combattimento!"
+            },
+            es: {
+                title: "Spacecraft: Guerra de naves espaciales",
+                desc: "Un dinámico arcade espacial donde controlas una nave modular y luchas contra los enemigos. ¡Reúne nuevas piezas, mejora tus armas, fortalece tu nave, supera niveles y conviértela en una poderosa estación de combate!"
+            },
+            zh: {
+                title: "星际战舰：太空战争",
+                desc: "动态太空射击游戏，操控可组装的战舰迎战敌人。收集新部件，升级武器系统，强化战舰性能，完成关卡挑战，将你的飞船打造为最强宇宙战斗堡垒！"
+            },
+            ja: {
+                title: "スペースクラフト：宇宙船戦争",
+                desc: "モジュール式の宇宙船を操り、敵と戦うダイナミックな宇宙アーケードゲーム。新しいパーツを集めて武器を強化し、宇宙船を強力な戦闘ステーションへと進化させましょう！ "
+            },
+            ko: {
+                title: "Spacecraft: 우주선 전쟁",
+                desc: "모듈식 우주선을 조종하며 적들과 싸우는 역동적인 우주 아케이드 게임입니다. 새로운 부품을 수집해 무기와 함선을 강화하고, 레벨을 클리어하여 나만의 우주선을 강력한 전투 기지로 만들어 보세요!"
             }
         }, {
             index: 6,
