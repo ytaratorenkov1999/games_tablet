@@ -828,19 +828,19 @@
         e ? (arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : []).forEach((s => {
             const i = t.find((g => g.index === s));
             if (!i) return;
-            const a = `\n      <div class="swiper-slide" data-graph-path="${i.index}">\n        <h1 class="slide-title">${i[r]?.title||""}</h1>\n        <img src="img/${i.name}__slider.png" alt="${i.name} cover">\n      </div>`;
+            const a = `\n      <div class="swiper-slide" data-graph-path="${i.index}">\n        <h1 class="slide-title">${i[r]?.title||""}</h1>\n        <div class="slide-cover">\n          <img class="slide-cover__img" src="img/${i.name}__slider.webp" alt="${i.name} cover" decoding="async">\n          <img class="slide-cover__blur" src="img/${i.name}__slider_blur.webp" alt="" aria-hidden="true" decoding="async">\n        </div>\n      </div>`;
             e.insertAdjacentHTML("beforeend", a)
         })) : console.warn("sliderContainer не найден в DOM")
     }(a, SLIDER_GAME_INDEXES),
     function (e) {
         e.forEach((e => {
-            const s = `<div class="cards__item" data-graph-path="${e.index}">\n        <img class="cards__item__cover" src="img/${e.name}.jpg" alt="Cover">\n        <div class="cards__item__info">\n          <h2 class="cards__item__info__title">${e[r]?.title||""}</h2>\n          <div class="cards__item__info__age">${e.rate}+</div>\n        </div>\n      </div>`;
+            const s = `<div class="cards__item" data-graph-path="${e.index}">\n        <img class="cards__item__cover" src="img/${e.name}.jpg" alt="Cover" loading="lazy" decoding="async">\n        <div class="cards__item__info">\n          <h2 class="cards__item__info__title">${e[r]?.title||""}</h2>\n          <div class="cards__item__info__age">${e.rate}+</div>\n        </div>\n      </div>`;
             t.insertAdjacentHTML("beforeend", s)
         }))
     }(a),
     function (e) {
         e.forEach((e => {
-            const t = `<div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="${e.index}">\n\n      <div class="graph-modal__controls">\n\n          <button class="btn-reset button js-modal-close">\n            <svg width="15" height="30" viewBox="0 0 15 30" fill="none" xmlns="http://www.w3.org/2000/svg">\n              <path d="M12.7499 27.54L2.42658 17.2167C1.20742 15.9975 1.20742 14.0025 2.42658 12.7833L12.7499 2.45999" stroke="white" stroke-width="2.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>\n            </svg>\n            <p data-i18n="btnBack">Назад</p>\n          </button>\n\n          <button class="btn-reset button game-launcher" data-url="games/${e.name}/index.html">\n            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">\n              <path d="M13.9929 19.1484L18.0463 15.0951L13.9929 11.0417" stroke="white" stroke-width="2.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>\n              <path d="M1.83398 15.095H17.9365" stroke="white" stroke-width="2.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>\n              <path d="M14.5 2.33325C21.4983 2.33325 27.1667 7.08325 27.1667 14.9999C27.1667 22.9166 21.4983 27.6666 14.5 27.6666" stroke="white" stroke-width="2.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>\n            </svg>\n            <p data-i18n="btnPlay">Играть</p>\n          </button>\n\n      </div>\n\n      <div class="graph-modal__content">\n\n        <div class="graph-modal__title">\n          <h1 class="title">${e[r]?.title||""}</h1>\n          <p class="age">${e.rate}+</p>\n        </div>\n\n        <div class="graph-modal__info">\n          <div class="head">\n\n            <svg xmlns="http://www.w3.org/2000/svg" width="30%" height="5" viewBox="0 0 30 5" preserveAspectRatio="none">\n              <line x1="0" y1="3" x2="30" y2="3" />\n            </svg>\n\n            <h3 data-i18n="howPlay">Как играть</h3>\n\n            <svg xmlns="http://www.w3.org/2000/svg" width="30%" height="5" viewBox="0 0 30 5" preserveAspectRatio="none">\n              <line x1="0" y1="3" x2="30" y2="3" />\n            </svg>\n\n          </div>\n\n          <div class="info">\n            <p>${e[r]?.desc||""}</p>\n            <p data-i18n="control">Управление - тач</p>\n          </div>\n\n        </div>\n\n        <div class="graph-modal__screens">\n          <img src="img/${e.name}__screen_1.jpg" alt="screen" onerror="this.src='img/blanc.png'">\n          <img src="img/${e.name}__screen_2.jpg" alt="screen" onerror="this.src='img/blanc.png'">\n          <img src="img/${e.name}__screen_3.jpg" alt="screen" onerror="this.src='img/blanc.png'">\n        </div>\n\n      </div>\n    </div>`;
+            const t = `<div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="${e.index}">\n\n      <div class="graph-modal__controls">\n\n          <button class="btn-reset button js-modal-close">\n            <svg width="15" height="30" viewBox="0 0 15 30" fill="none" xmlns="http://www.w3.org/2000/svg">\n              <path d="M12.7499 27.54L2.42658 17.2167C1.20742 15.9975 1.20742 14.0025 2.42658 12.7833L12.7499 2.45999" stroke="white" stroke-width="2.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>\n            </svg>\n            <p data-i18n="btnBack">Назад</p>\n          </button>\n\n          <button class="btn-reset button game-launcher" data-url="games/${e.name}/index.html">\n            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">\n              <path d="M13.9929 19.1484L18.0463 15.0951L13.9929 11.0417" stroke="white" stroke-width="2.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>\n              <path d="M1.83398 15.095H17.9365" stroke="white" stroke-width="2.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>\n              <path d="M14.5 2.33325C21.4983 2.33325 27.1667 7.08325 27.1667 14.9999C27.1667 22.9166 21.4983 27.6666 14.5 27.6666" stroke="white" stroke-width="2.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>\n            </svg>\n            <p data-i18n="btnPlay">Играть</p>\n          </button>\n\n      </div>\n\n      <div class="graph-modal__content">\n\n        <div class="graph-modal__title">\n          <h1 class="title">${e[r]?.title||""}</h1>\n          <p class="age">${e.rate}+</p>\n        </div>\n\n        <div class="graph-modal__info">\n          <div class="head">\n\n            <svg xmlns="http://www.w3.org/2000/svg" width="30%" height="5" viewBox="0 0 30 5" preserveAspectRatio="none">\n              <line x1="0" y1="3" x2="30" y2="3" />\n            </svg>\n\n            <h3 data-i18n="howPlay">Как играть</h3>\n\n            <svg xmlns="http://www.w3.org/2000/svg" width="30%" height="5" viewBox="0 0 30 5" preserveAspectRatio="none">\n              <line x1="0" y1="3" x2="30" y2="3" />\n            </svg>\n\n          </div>\n\n          <div class="info">\n            <p>${e[r]?.desc||""}</p>\n            <p data-i18n="control">Управление - тач</p>\n          </div>\n\n        </div>\n\n        <div class="graph-modal__screens">\n          <img data-src="img/${e.name}__screen_1.jpg" alt="screen" decoding="async" onerror="this.onerror=null;this.src='img/blanc.png'">\n          <img data-src="img/${e.name}__screen_2.jpg" alt="screen" decoding="async" onerror="this.onerror=null;this.src='img/blanc.png'">\n          <img data-src="img/${e.name}__screen_3.jpg" alt="screen" decoding="async" onerror="this.onerror=null;this.src='img/blanc.png'">\n        </div>\n\n      </div>\n    </div>`;
             s.insertAdjacentHTML("beforeend", t)
         }))
     }(a), o = r, document.querySelectorAll("[data-i18n]").forEach((e => {
@@ -3387,13 +3387,11 @@
             pagination: {
                 el: ".swiper-pagination",
                 type: "progressbar"
-            },
-            effect: "fade",
-            fadeEffect: {
-                crossFade: !0
             }
         })
-    }, new class {
+    }, document.addEventListener("visibilitychange", (function () {
+        window.swiper && (document.hidden ? window.swiper.autoplay.stop() : document.querySelector(".graph-modal.is-open, .game__container.visible") || window.swiper.autoplay.start())
+    })), new class {
         constructor(e) {
             this.options = Object.assign({
                 isOpen: () => {},
@@ -3418,7 +3416,9 @@
         }
         open(e) {
             if (this.previousActiveElement = document.activeElement, this.isOpen) return this.reOpen = !0, void this.close();
-            this.modalContainer = this._nextContainer, e && (this.modalContainer = document.querySelector(`[data-graph-target="${e}"]`)), this.modalContainer.scrollTo(0, 0), this.modal.style.setProperty("--transition-time", this.speed / 1e3 + "s"), this.modal.classList.add("is-open"), document.body.style.scrollBehavior = "auto", document.documentElement.style.scrollBehavior = "auto", this.disableScroll(), this.modalContainer.classList.add("graph-modal-open"), this.modalContainer.classList.add(this.animation), setTimeout((() => {
+            this.modalContainer = this._nextContainer, e && (this.modalContainer = document.querySelector(`[data-graph-target="${e}"]`)), this.modalContainer.querySelectorAll("img[data-src]").forEach((e => {
+                e.src = e.dataset.src, e.removeAttribute("data-src")
+            })), this.modalContainer.scrollTo(0, 0), this.modal.style.setProperty("--transition-time", this.speed / 1e3 + "s"), this.modal.classList.add("is-open"), document.body.style.scrollBehavior = "auto", document.documentElement.style.scrollBehavior = "auto", this.disableScroll(), this.modalContainer.classList.add("graph-modal-open"), this.modalContainer.classList.add(this.animation), setTimeout((() => {
                 this.options.isOpen(this), this.modalContainer.classList.add("animate-open"), this.isOpen = !0, this.focusTrap()
             }), this.speed)
         }
@@ -3470,7 +3470,7 @@
         const s = t.getAttribute("data-url"),
             i = document.getElementById("gameFrame"),
             a = document.querySelector(".game__container");
-        s && i.src !== s && (i.src = s, a.classList.add("visible"))
+        s && i.src !== s && (i.src = s, a.classList.add("visible"), window.swiper && window.swiper.autoplay.stop())
     })), document.addEventListener("DOMContentLoaded", (function () {
         const e = document.querySelector(".game__container"),
             t = document.querySelector(".game__container__confirm"),
@@ -3484,7 +3484,7 @@
         })), a?.addEventListener("click", (function () {
             t?.classList.add("is-hidden")
         })), n?.addEventListener("click", (function () {
-            s.src = "", e.classList.remove("visible"), t?.classList.add("is-hidden")
+            s.src = "", e.classList.remove("visible"), t?.classList.add("is-hidden"), window.swiper && !document.querySelector(".graph-modal.is-open") && window.swiper.autoplay.start()
         })), r?.addEventListener("click", (function (e) {
             e.preventDefault(), "undefined" != typeof android && android.close && android.close()
         }))
