@@ -828,7 +828,7 @@
         e ? (arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : []).forEach((s => {
             const i = t.find((g => g.index === s));
             if (!i) return;
-            const a = `\n      <div class="swiper-slide" data-graph-path="${i.index}">\n        <h1 class="slide-title">${i[r]?.title||""}</h1>\n        <div class="slide-cover">\n          <img class="slide-cover__img" src="img/${i.name}__slider.webp" alt="${i.name} cover" decoding="async">\n          <img class="slide-cover__blur" src="img/${i.name}__slider_blur.webp" alt="" aria-hidden="true" decoding="async">\n        </div>\n      </div>`;
+            const a = `\n      <div class="swiper-slide" data-graph-path="${i.index}">\n        <h1 class="slide-title">${i[r]?.title||""}</h1>\n        <div class="slide-cover">\n          <img class="slide-cover__img" src="img/${i.name}__slider.png" alt="${i.name} cover" decoding="async">\n          <img class="slide-cover__blur" src="img/${i.name}__slider_blur.png" alt="" aria-hidden="true" decoding="async">\n        </div>\n      </div>`;
             e.insertAdjacentHTML("beforeend", a)
         })) : console.warn("sliderContainer не найден в DOM")
     }(a, SLIDER_GAME_INDEXES),
